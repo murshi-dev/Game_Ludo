@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Ludo Game</title>
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+    <div class="maincontent">
+      <div class="heading">
+        <h1>Random Number Game</h1>
+        <h4>First to get 50 WINS!</h4>
+      </div>
+
+      <div class="player1area">
+        <div id="root1">0</div>
+        <button
+          id="b1"
+          onclick="random1(); checkWin(); disableButton1(); enableButton2()"
+        >
+          PLAYER 1
+        </button>
+      </div>
+      <div class="player2area">
+        <div id="root2">0</div>
+        <button
+          id="b2"
+          onclick="random2(); checkWin(); disableButton2(); enableButton1()"
+        >
+          PLAYER 2
+        </button>
+      </div>
+
+      <div class="msg"></div>
+
+      <div class="oncemore">
+
+      </div>
+      <button id="b3" onclick="clearContent();">Play Again</button>
+    
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

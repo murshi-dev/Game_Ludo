@@ -1,0 +1,64 @@
+:root {
+  --textcolor: #fffffe;
+  --texthover: #abd1c6;
+  --buttoncolor: #f9bc60;
+  --buttontext: #001e1d;
+}
+body {
+  background-color: #004643;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--textcolor);
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100vh;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  border-radius: 10px;
+  background-color: var(--buttoncolor);
+  color: var(--buttontext);
+  font-size: 1.3em;
+  font-weight: bolder;
+  cursor: pointer;
+  border-color: var(--buttoncolor);
+}
+button:disabled {
+  border-color: gray;
+  background-color: gray;
+  color: lightgray;
+}
+.player1area,
+.player2area {
+    text-align: center;
+  height: 100px;
+  border: 1px dotted darkgrey;
+  border-radius: 10px;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+#root1, #root2{
+    font-size: 2em;
+}
+
+.msg {
+  height: 50px;
+  font-size: 2em;
+}
